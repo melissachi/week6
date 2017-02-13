@@ -28,7 +28,7 @@ var App = React.createClass({
   getPoker: function(){
         return { hand: getDeck().shuffle().splice(0,5)};
     },
-  dealclicked: function(hand) {
+  dealClicked: function(hand) {
     this.setState({
       hand: getDeck().shuffle().splice(0,5)
     })
@@ -44,7 +44,7 @@ var App = React.createClass({
           <Card hand={this.state.hand[3]}/>
           <Card hand={this.state.hand[4]}/>
             <div className="col-sm-2">
-              <h1><a href="#" onClick={this.dealclicked} className="btn btn-success">Deal</a></h1>
+              <h1><a href="#" onClick={this.dealClicked} className="btn btn-success">Deal</a></h1>
             </div>
         </div>
       </div>
